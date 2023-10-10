@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/Wanna-Rock.ico" type="image/x-icon">
+    <title>Wanna Rock</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="nome">Wanna Rock</div>
+                </div>
+      </div>
+      <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">Set list</a></li>
+        </ul>
+      </nav>
+      </div>
+    </div>
+    <div class="container-2">
+        <h2 class="title">Escolha um ano</h2>
+        <div class="container-img">
+        <!--Anos 50-->
+        <div class="ano">
+            <a href=""><img src="img/Elvis1.jpg" alt="" class="ano-img" ></a>
+            <h2 class="titulo">Anos 50</h2>
+            <span class="anos">Os anos 50</span>
+        </div>
+        <!--Anos 60--> <!--Product-box-->
+        <div class="ano">
+            <img src="img/The-Beatles.jpg" alt="" class="ano-img">
+            <h2 class="titulo">Anos 60</h2>
+            <span class="anos">Os anos 60</span>
+        </div>
+        <!--Anos 70-->
+        <div class="ano">
+            <img src="img/Queen.jpg" alt="" class="ano-img"> <!--product-img-->
+            <h2 class="titulo">Anos 70</h2> <!--product-title-->
+            <span class="anos">Os anos 70</span> <!--product-price-->
+        </div>
+        <!--Anos 80-->
+        <div class="ano">
+            <img src="img/Gnr.jpg" alt="" class="ano-img">
+            <h2 class="titulo">Anos 80</h2>
+            <span class="anos">Os anos 80</span>
+        </div>
+        <!--Anos 90-->
+        <div class="ano">
+            <img src="img/Nirvana.jpg" alt="" class="ano-img">
+            <h2 class="titulo">Anos 90</h2>
+            <span class="anos">Os anos 90</span>
+        </div>
+        <!--Anos 2000-->
+        <div class="ano">
+            <img src="img/link-park.png" alt="" class="ano-img">
+            <h2 class="titulo">Anos 2000</h2>
+            <span class="anos">Os anos 2000</span>
+        </div>
+        </div>
+         </div>
+    </div>
+</body>
+
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+.header{
+    background-color:rgb(82, 76, 76);
+    padding: 15px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+p{
+  color: #fff;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 45px;
+    padding-right: 25px;
+}
+.nome{
+    color: #fff;
+    background-color: black;
+    margin: auto;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/*  Colocar no index site principal*/
+
+.container-img{
+    text-align: center;
+}
+.ano{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+}
+.ano:hover{
+    padding: 10px;
+    border: 1px solid var(--text-color);
+    transition: .4s;
+}
+.ano-img{
+    width: 300px;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    margin-bottom: .5rem;
+}
+.titulo{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+}
+.anos{
+    font-weight: 500;
+}
+</style>
+</html>

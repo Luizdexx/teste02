@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/Wanna-Rock.ico" type="image/x-icon">
+    <title>Wanna Rock</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="nome">Anos 80</div>
+                </div>
+      </div>
+      <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">Set list</a></li>
+            <li><a href="index.html">Ver mais</a></li>
+        </ul>
+      </nav>
+      </div>
+    </div>
+    </div>
+
+    <div class="list">
+        <h2>ROCK I</h2>
+        <a href=""><img src="img80/guns.jpg" alt="Cantor 1">Gun'n Roses</a>
+        <a href=""><img src="img80/for-all.jpg" alt="Cantor 2">Metallica</a>
+        <a href=""><img src="img80/bon-jovi.jpg" alt="Cantor 2">Bon Jovi </a>
+        <a href=""><img src="img80/journery.jpg" alt="Cantor 2">Journery</a>
+        <a href=""><img src="img80/scorpions.jpg" alt="Cantor 1">Scorpions</a>
+        <a href=""><img src="img80/ozzy.jpg" alt="Cantor 2">Ozzy Osbourne</a>
+        <a href=""><img src="img80/black.jpg" alt="Cantor 2">Black Sabbath </a> 
+        <a href=""><img src="img80/dio.jpg" alt="Cantor 1">Dio</a>
+        <a href=""><img src="img80/iron.jpg" alt="Cantor 2">Iron Maiden</a>
+        <a href=""><img src="img80/judas.jpg" alt="Cantor 2">Judas Priest</a>
+    </div>
+
+    <div class="list">
+        <h2>Rock II</h2>
+        <a href=""><img src="img80/Twisted.jpg" alt="Cantor 3">Twisted Sister</a>
+        <a href=""><img src="img80/Motley.jpeg" alt="Cantor 4">Motley Crue</a>
+        <a href=""><img src="img80/kiss.jpg" alt="Cantor 3">Kiss</a>
+        <a href=""><img src="img80/skid.jpg" alt="Cantor 4">Skid Row</a>
+        <a href=""><img src="img80/pantera.jpeg" alt="Cantor 3">Pantera</a>
+        <a href=""><img src="img80/sepultura.jpg" alt="Cantor 4">Sepultura</a>
+        <a href=""><img src="img80/death.jpg" alt="Cantor 3">Death</a>
+        <a href=""><img src="img80/quiet.jpg" alt="Cantor 4">Quiet Riot</a>
+        <a href=""><img src="img80/aerosmith.jpeg" alt="Cantor 3">Aerosmith</a>
+        <a href=""><img src="img80/queen.jpg" alt="Cantor 4">Queen</a>
+        
+    </div>
+
+    <div class="list">
+        <h2>Rock III</h2>
+        <a href=""><img src="img80/Wasp.jpg" alt="Cantor 5">W.A.S.P.</a>
+        <a href=""><img src="img80/u2.jpg" alt="">U2</a>
+        <a href=""><img src="img80/poison.jpg" alt="">Poison</a>
+        <a href=""><img src="img80/def.jpg" alt="">Def Leppard</a>
+        <a href=""><img src="img80/prince.jpg" alt="">Prince</a>
+        <a href=""><img src="img80/europe.jpg" alt="">Europe</a>
+        <a href=""><img src="img80/acdc.jpg" alt="">ACDC</a>
+        <a href=""><img src="img80/van.jpg" alt="">Van Halen</a>
+        <a href=""><img src="img80/anthrax.jpg" alt="">Anthrax</a>
+        <a href=""><img src="img80/mega.jpg" alt="">Megadeath</a>
+    </div>
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start; 
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #header {
+            background-color: rgba(128, 128, 128, 0.5);
+            height: 70px;
+            display: fixed;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 50px;
+            position: fixed; 
+            width: 100%;
+           
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .theme-button {
+            width: 50px;
+            height: 50px;
+        }
+        .list {
+            background-color: rgba(128, 128, 128, 0.5);
+            width: 30%;
+            padding: 20px;
+            margin-top: 80px; /* to avoid overlap with the header */
+            border-radius: 10px; /* for smooth border */
+        }
+        .list h2 {
+            text-align: center;
+        }
+        .list a {
+            display: flex;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+        .list img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        .theme-button {
+            background-image: none;
+            background-color: transparent;
+            border-color: transparent;
+            color: white;
+        }
+    </style>
+    <script>
+        function toggleTheme() {
+            var body = document.body;
+            if (body.style.backgroundColor === "black") {
+                body.style.backgroundColor = "white";
+                body.style.color = "black";
+                var lists = document.getElementsByClassName('list');
+                for (var i = 0; i < lists.length; i++) {
+                    lists[i].style.backgroundColor = "white";
+                    lists[i].style.color = "black";
+                }
+                var headerLinks = document.querySelectorAll('#header a');
+                for (var i = 0; i < headerLinks.length; i++) {
+                    headerLinks[i].style.color = "black";
+                }
+                
+            } else {
+                body.style.backgroundColor = "black";
+                body.style.color = "white";
+                var lists = document.getElementsByClassName('list');
+                for (var i = 0; i < lists.length; i++) {
+                    lists[i].style.backgroundColor = "rgba(128,128,128,0.5)";
+                    lists[i].style.color = "white";
+                }
+                var headerLinks = document.querySelectorAll('#header a');
+                for (var i = 0; i < headerLinks.length; i++) {
+                    headerLinks[i].style.color = "white";
+                }
+                
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+<!-- <div class="list">
+        <h2>Rock</h2>
+        <a href=""><img src="" alt="Cantor 1"></a>
+        <a href=""><img src="" alt="Cantor 2"></a>
+        <a href=""><img src="" alt="Cantor 2"> </a>
+        <a href=""><img src="" alt="Cantor 2"></a>
+        <a href=""><img src="" alt="Cantor 1"></a>
+        <a href=""><img src="" alt="Cantor 2"></a>
+        <a href=""><img src="" alt="Cantor 2"> </a>
+        <a href=""><img src="" alt="Cantor 1"></a>
+        <a href=""><img src="" alt="Cantor 2"></a>
+        <a href=""><img src="" alt="Cantor 2"></a>
+      </div>
+      <style> -->

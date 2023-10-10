@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+.header{
+    background-color:rgb(82, 76, 76);
+    padding: 15px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+p{
+  color: #fff;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 45px;
+    padding-right: 25px;
+}
+.nome{
+    color: #fff;
+    background-color: black;
+    margin: auto;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/*Estilização dos anos*/
+
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title::after{
+    content: '';
+    background: #518fed;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.container-img{
+    text-align: center;
+}
+.ano{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+}
+.ano:hover{
+    padding: 10px;
+    border: 1px solid var(--text-color);
+    transition: .4s;
+}
+.ano-img{
+    width: 300px;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    margin-bottom: .5rem;
+}
+.titulo{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+}
+.anos{
+    font-weight: 500;
+}
+.fundo{
+    background-color: #fff;
+}
